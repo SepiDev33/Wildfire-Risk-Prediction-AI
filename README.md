@@ -69,7 +69,7 @@ The project follows a standard machine learning workflow:
 
 ## Repository Structure
 
-```text
+```
 Wildfire-Risk-Prediction-AI
 ├── code/
 │   ├── Train_Model.py
@@ -87,37 +87,70 @@ Wildfire-Risk-Prediction-AI
 ├── requirements.txt
 └── README.md
 ```
-How to Run
-1. Install dependencies
-pip install -r requirements.txt
-2. Navigate to code directory
-cd code
-3. Run training script
-python Train_Model.py
-4. Output
-Model performance metrics will be displayed
-Best model will be saved as:
-wildfire_best_model.joblib
-Current Status
-Project topic selected
-Proposal completed
-Dataset selected
-Training and evaluation code implemented
-Future Work
-Improve model performance
-Try additional algorithms
-Perform feature importance analysis
-Add visualizations
-Technologies Used
-Python
-pandas
-NumPy
-scikit-learn
-matplotlib
-seaborn
-ucimlrepo
-Author
+## How to Run
 
-Sepehr Delavarkhan
-University of New Brunswick
+### 1. Install Dependencies
+Make sure you have Python installed, then run:
+
+pip install -r requirements.txt
+
+---
+
+### 2. Navigate to the Code Directory
+
+cd code
+
+---
+
+### 3. Run the Training Script
+
+python Train_Model.py
+
+---
+
+### 4. Output
+
+- Model performance metrics (Accuracy, Precision, Recall, F1-score) will be displayed in the terminal.
+- The best-performing model will be saved as:
+
+wildfire_best_model.joblib
+
+---
+
+## Current Status
+
+- Project topic selected  
+- Proposal completed  
+- Dataset selected  
+- Data preprocessing implemented  
+- Model training and evaluation completed  
+
+---
+
+## Future Work
+
+- Improve model performance through hyperparameter tuning  
+- Experiment with additional machine learning algorithms  
+- Perform feature importance analysis to understand key predictors  
+- Add data visualizations and graphs for better interpretation  
+- Explore real-time or larger-scale wildfire datasets  
+
+---
+
+## Technologies Used
+
+- Python  
+- pandas  
+- NumPy  
+- scikit-learn  
+- matplotlib  
+- seaborn  
+- ucimlrepo  
+
+---
+
+## Author
+
+Sepehr Delavarkhan  
+University of New Brunswick  
 CS4795 – Introduction to Artificial Intelligence
