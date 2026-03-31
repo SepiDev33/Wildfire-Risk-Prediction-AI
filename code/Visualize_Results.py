@@ -8,7 +8,6 @@ from ucimlrepo import fetch_ucirepo
 from sklearn.metrics import confusion_matrix
 import os
 
-os.makedirs("../performance", exist_ok=True)
 
 def load_dataset():
     dataset = fetch_ucirepo(id=547)
