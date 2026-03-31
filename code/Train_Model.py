@@ -14,22 +14,21 @@ from sklearn.tree import DecisionTreeClassifier
 
 def load_dataset():
     dataset = fetch_ucirepo(id=547)
-
     X = dataset.data.features.copy()
     y = dataset.data.targets.copy()
-
     if isinstance(y, pd.DataFrame):
         y = y.iloc[:, 0]
-
     y = y.astype(str).str.strip().str.lower()
     y = y.replace({
         "fire": 1,
         "not fire": 0,
         "notfire": 0
     })
-
+    y = pd.to_numeric(y, errors="coerce")
+    valid_indices = y.notna()
+    X = X[valid_indices]
+    y = y[valid_indices]
     X.columns = [str(col).strip().lower().replace(" ", "_") for col in X.columns]
-
     return X, y
 
 
